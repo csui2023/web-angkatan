@@ -10,9 +10,12 @@ export default function SearchFam() {
   const router = useRouter();
 
   const createQueryString = useCallback(
-    (name: string, value: string) => {
+    (values: object) => {
       const params = new URLSearchParams(searchParams);
-      params.set(name, value);
+
+      for (const [key, value] of Object.entries(values)) {
+        params.set(key, value);
+      }
 
       return params.toString();
     },
@@ -43,12 +46,7 @@ export default function SearchFam() {
 
       <button
         onClick={() => {
-          router.push(
-            `/the-fam?${createQueryString("id", id)}&${createQueryString(
-              "major",
-              major
-            )}`
-          );
+          router.push(`/the-fam?${createQueryString({ id, major })}`);
         }}
         className="bg-gray-200 px-3 py-1 border-gray-200"
       >
