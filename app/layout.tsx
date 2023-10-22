@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={font.className} lang="en">
-      <body className="flex justify-center items-center h-screen">
+      <body className="flex justify-center items-center">
         {children}
       </body>
     </html>
