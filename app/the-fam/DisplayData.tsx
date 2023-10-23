@@ -16,7 +16,7 @@ export default async function DisplayData({
       href={`/the-fam/${d.id}`}
     >
       <Image
-        src={`/pfp/${d.id}.png`}
+        src={`/pfp/${d.id}.jpg`}
         alt={d.id}
         width={50}
         height={50}

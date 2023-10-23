@@ -5,10 +5,10 @@ export default function Profile({ params }: { params: { id: string } }) {
   return (
     <>
       <Image
-        src={`/pfp/${params.id}.png`}
+        src={`/pfp/${params.id}.jpg`}
         alt={params.id}
-        width={512}
-        height={512}
+        width={256}
+        height={256}
       />
       <pre className="whitespace-pre-wrap">
         {JSON.stringify(
