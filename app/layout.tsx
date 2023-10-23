@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.scss";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 
@@ -16,8 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html className={font.className} lang="en">
-      <body className="flex justify-center items-center">
-        {children}
+      <body>
+        <div className='min-h-screen bgMesh relative before:content-[""] before:-z-999 before:absolute before:w-full before:h-full before:bg-[#ffffff86] before:backdrop-blur-md'>
+          <div className="scrollbar h-screen overflow-auto">
+            <div className="relative">
+              <div className="flex justify-center items-center">{children}</div>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
