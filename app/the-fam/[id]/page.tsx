@@ -1,7 +1,18 @@
-import data from "../../../public/data.json";
+import { promises as fs } from "fs";
 import Image from "next/image";
 
-export default function Profile({ params }: { params: { id: string } }) {
+async function getData() {
+  const string = await fs.readFile(
+    process.cwd() + "/public/data.json",
+    "utf-8"
+  );
+
+  return JSON.parse(string);
+}
+
+export default async function Profile({ params }: { params: { id: string } }) {
+  const data = await getData();
+
   return (
     <>
       <Image
@@ -12,7 +23,7 @@ export default function Profile({ params }: { params: { id: string } }) {
       />
       <pre className="whitespace-pre-wrap">
         {JSON.stringify(
-          data.find((d) => d.id == params.id),
+          data?.find((d: any) => d.id == params.id),
           null,
           2
         )}
