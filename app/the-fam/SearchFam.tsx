@@ -2,11 +2,12 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, useCallback } from "react";
+import { HiMagnifyingGlass } from "react-icons/hi2";
 
 export default function SearchFam() {
   const searchParams = useSearchParams()!;
   const [id, setId] = useState("");
-  const [major, setMajor] = useState("Ilmu Komputer");
+  const [major, setMajor] = useState("All Majors");
   const router = useRouter();
 
   const createQueryString = useCallback(
@@ -23,11 +24,11 @@ export default function SearchFam() {
   );
 
   return (
-    <div className="flex justify-center space-x-10">
+    <div className="flex justify-center">
       <input
         type="text"
-        placeholder="Type here"
-        className="border px-3 py-1"
+        placeholder="Search by Name"
+        className="px-3 py-2 rounded-l-md"
         onChange={(e) => {
           setId(e.target.value);
         }}
@@ -35,12 +36,14 @@ export default function SearchFam() {
 
       <select
         name="major"
-        className="px-3 py-1"
+        className="px-3 py-2 border-l-2"
         onChange={(e) => {
           setMajor(e.target.value);
         }}
       >
+        <option value="All Majors">All Majors</option>
         <option value="Ilmu Komputer">Ilmu Komputer</option>
+        <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
         <option value="Sistem Informasi">Sistem Informasi</option>
       </select>
 
@@ -48,9 +51,9 @@ export default function SearchFam() {
         onClick={() => {
           router.push(`/the-fam?${createQueryString({ id, major })}`);
         }}
-        className="bg-gray-200 px-3 py-1 border-gray-200"
+        className="bg-indigo-600 text-white rounded-r-md px-3 py-2"
       >
-        Search
+        <HiMagnifyingGlass />
       </button>
     </div>
   );
