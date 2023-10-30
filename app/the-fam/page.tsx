@@ -8,7 +8,7 @@ export default function TheFam({
   searchParams: { id: string | undefined; major: string | undefined };
 }) {
   return (
-    <div className="mt-10 max-w-7xl px-6 mx-auto">
+    <div className="mt-24 max-w-7xl px-6 mx-auto">
       <SearchFam />
       <div className="mt-10 flex flex-col">
         <Suspense key={searchParams.id} fallback={<div>Loading...</div>}>
