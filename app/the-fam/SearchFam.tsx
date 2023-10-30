@@ -23,7 +23,7 @@ export default function SearchFam() {
   );
 
   return (
-    <div className="flex space-x-10">
+    <div className="flex justify-center space-x-10">
       <input
         type="text"
         placeholder="Type here"

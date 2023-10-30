@@ -8,9 +8,9 @@ export default function TheFam({
   searchParams: { id: string | undefined; major: string | undefined };
 }) {
   return (
-    <div className="mt-24 max-w-7xl px-6 mx-auto">
+    <div className="mt-24 px-6">
       <SearchFam />
-      <div className="mt-10 flex flex-col">
+      <div className="mt-10 flex flex-row flex-wrap justify-center gap-4">
         <Suspense key={searchParams.id} fallback={<div>Loading...</div>}>
           <DisplayData id={searchParams.id} major={searchParams.major} />
         </Suspense>
