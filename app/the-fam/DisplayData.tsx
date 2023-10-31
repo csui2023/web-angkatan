@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function fetchData(id: string | undefined, major: string | undefined) {
-  console.log(id, major);
   const data = JSON.parse(
     await fs.readFile(process.cwd() + "/public/data.json", "utf-8")
   );
