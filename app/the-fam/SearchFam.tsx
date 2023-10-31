@@ -7,7 +7,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 export default function SearchFam() {
   const searchParams = useSearchParams()!;
   const [id, setId] = useState("");
-  const [major, setMajor] = useState("All Majors");
+  const [major, setMajor] = useState("");
   const router = useRouter();
 
   const createQueryString = useCallback(
@@ -24,7 +24,7 @@ export default function SearchFam() {
   );
 
   return (
-    <div className="flex justify-center">
+    <form className="flex justify-center" onSubmit={(e) => e.preventDefault()}>
       <input
         type="text"
         placeholder="Search by Name"
@@ -41,7 +41,7 @@ export default function SearchFam() {
           setMajor(e.target.value);
         }}
       >
-        <option value="All Majors">All Majors</option>
+        <option value="">All Majors</option>
         <option value="Ilmu Komputer">Ilmu Komputer</option>
         <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
         <option value="Sistem Informasi">Sistem Informasi</option>
@@ -55,6 +55,6 @@ export default function SearchFam() {
       >
         <HiMagnifyingGlass />
       </button>
-    </div>
+    </form>
   );
 }

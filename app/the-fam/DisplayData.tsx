@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function fetchData(id: string | undefined, major: string | undefined) {
+  console.log(id, major);
   const data = JSON.parse(
     await fs.readFile(process.cwd() + "/public/data.json", "utf-8")
   );
 
   return data.filter(
     (c: any) =>
-      (typeof id !== "undefined" ? c.id.includes(id) : c) &&
-      (typeof major !== "undefined" ? c.jurusan === major : c)
+      (id ? c.id.includes(id) : true) && (major ? c.jurusan === major : true)
   );
 }
 
