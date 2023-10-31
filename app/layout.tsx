@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "../styles/globals.scss";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
@@ -24,6 +25,7 @@ export default function RootLayout({
             <div className="relative">
               <div className="flex justify-center items-center">{children}</div>
             </div>
+            <Footer />
           </div>
         </div>
       </body>
