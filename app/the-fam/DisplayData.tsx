@@ -23,7 +23,7 @@ export default async function DisplayData({
   const data = await fetchData(id, major);
   return data.map((d: any, i: number) => (
     <Link
-      className="rounded-md bg-gray-300 bg-opacity-30 border-gray-400 border-opacity-10 border-solid border-2 backdrop-blur-sm flex flex-col w-[192px] items-center text-center gap-4 py-8 px-4"
+      className="rounded-md hover:bg-white hover:bg-opacity-30 hover:scale-105 transition-all duration-100 backdrop-blur flex flex-col w-[192px] items-center text-center gap-4 py-8 px-4"
       href={`/the-fam/${d.id}`}
     >
       <Image

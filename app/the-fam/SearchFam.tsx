@@ -34,11 +34,14 @@ export default function SearchFam() {
   );
 
   return (
-    <form className="flex justify-center" onSubmit={(e) => e.preventDefault()}>
+    <form
+      className="inline-flex justify-center shadow-sm"
+      onSubmit={(e) => e.preventDefault()}
+    >
       <input
         type="text"
         placeholder="Search by Name"
-        className="px-3 py-2 rounded-l-md"
+        className="px-3 py-2 rounded-l-md bg-opacity-50 bg-white backdrop-blur"
         defaultValue={id}
         onChange={(e) => {
           setId(e.target.value);
@@ -47,7 +50,7 @@ export default function SearchFam() {
 
       <select
         name="major"
-        className="px-3 py-2 border-l-2"
+        className="px-3 py-2 border-l-2 bg-opacity-50 bg-white backdrop-blur"
         defaultValue={major}
         onChange={(e) => {
           setMajor(e.target.value);
@@ -63,7 +66,7 @@ export default function SearchFam() {
         onClick={() => {
           router.push(`/the-fam?${createQueryString(id, major)}`);
         }}
-        className="bg-indigo-600 text-white rounded-r-md px-3 py-2"
+        className="text-black rounded-r-md px-3 py-2 bg-indigo-300 hover:bg-indigo-400 duration-100 bg-opacity-90 backdrop-blur"
       >
         <HiMagnifyingGlass />
       </button>

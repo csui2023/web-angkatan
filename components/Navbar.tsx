@@ -14,8 +14,8 @@ function NavLink({ isActive, ...props }: NavLinkProps) {
   return (
     <Link
       {...props}
-      className={`py-1.5 px-3 rounded-md bg-opacity-20 hover:bg-opacity-20 text-gray-900 ${
-        isActive ? "bg-gray-500" : ""
+      className={`py-1.5 px-3 rounded-md hover:bg-opacity-20 text-gray-900 ${
+        isActive ? "bg-gray-200" : ""
       } hover:bg-gray-600`}
     />
   );
@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     // TODO: Make Navbar responsive
-    <nav className="fixed top-2 left-2 right-2 rounded-md backdrop-blur bg-gray-400 z-50 bg-opacity-30 px-10 py-3 border-gray-400 border-opacity-10 border-solid border-2 flex flex-row content-center justify-between items-center">
+    <nav className="fixed left-0 right-0 backdrop-blur bg-white bg-opacity-75 shadow-md z-50 px-10 py-3 10 flex flex-row content-center justify-between items-center">
       <Link href="/">
         <Image src="/logo.png" alt="" width={48} height={49} />
       </Link>
