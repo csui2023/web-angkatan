@@ -17,13 +17,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={font.className} lang="en">
+    <html
+      className={font.className}
+      lang="en"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body>
         <div className='min-h-screen bgMesh relative before:content-[""] before:-z-999 before:absolute before:w-full before:h-full before:bg-[#ffffff86] before:backdrop-blur-md'>
-          <div className="scrollbar h-screen overflow-auto">
+          <div className="scrollbar overflow-auto">
             <Navbar />
             <div className="relative">
-              <div className="flex justify-center items-center">{children}</div>
+              <div className="flex justify-center items-center pt-20 lg:pt-10">
+                {children}
+              </div>
             </div>
             <Footer />
           </div>
