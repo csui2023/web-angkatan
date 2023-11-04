@@ -30,7 +30,7 @@ export default function TheFam() {
             setMajor(e.target.value);
           }}
         >
-          <option>All Majors</option>
+          <option value="">All Majors</option>
           <option value="Ilmu Komputer">Ilmu Komputer</option>
           <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
           <option value="Sistem Informasi">Sistem Informasi</option>
