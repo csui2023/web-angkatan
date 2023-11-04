@@ -32,7 +32,7 @@ export default function Navbar() {
       <Link href="/">
         <Image src="/logo.png" alt="" width={48} height={49} />
       </Link>
-      <div onClick={() => setOpen(false)} className={`${open ? "left-0" : "-left-full"} fixed md:static w-screen md:w-auto z-50 top-0 left-0 h-screen md:h-auto flex flex-col md:flex-row backdrop-blur md:backdrop-blur-0 md:bg-opacity-0 bg-white bg-opacity-75 justify-center items-center gap-4 md:gap-2`}>
+      <div className={`${open ? "bottom-0" : "-bottom-full"} duration-100 left-0 fixed md:static h-screen w-screen md:w-auto z-50 md:h-auto flex flex-col md:flex-row backdrop-blur md:backdrop-blur-0 md:bg-opacity-0 bg-white bg-opacity-75 justify-center items-center gap-4 md:gap-2`}>
         <h1 className="md:hidden text-4xl mb-20">CSUI 2023</h1>
 
         <NavLink isActive={pathname === "/the-fam"} href="/the-fam">
@@ -46,7 +46,7 @@ export default function Navbar() {
         </NavLink>
         <NavLink href="#">CStudy</NavLink>
 
-        <button className="md:hidden rounded-full mt-20 bg-black text-white p-3 text-xl">
+        <button className="md:hidden rounded-full mt-20 bg-black text-white p-3 text-xl" onClick={() => setOpen(false)}>
           <HiXMark />
         </button>
       </div>
