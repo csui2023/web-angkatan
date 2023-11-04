@@ -6,21 +6,14 @@ import {
   FaTwitter,
   FaLinkedin,
   FaLine,
-  FaLink,
 } from "react-icons/fa";
+import data from "../../../data/full.json";
 
-async function getData() {
-  const string = await fs.readFile(
-    process.cwd() + "/public/data.json",
-    "utf-8"
-  );
-
-  return JSON.parse(string);
+export async function generateStaticParams() {
+  return data.map(d => ({ id: d.id }));
 }
 
 export default async function Profile({ params }: { params: { id: string } }) {
-  const data = await getData();
-
   return (
     <div className="w-full mx-4 md:mx-32 xl:mx-56 py-32">
       <div className="flex justify-start space-x-10 pt-5">
@@ -37,7 +30,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div>
             <h2 className="font-bold text-purple-400">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id).jurusan,
+                data?.find((d: any) => d.id == params.id)?.jurusan,
                 null,
                 2
               ).replace(/['"]+/g, "")}
@@ -46,14 +39,14 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="mt-5">
             <h1 className="font-bold text-3xl lg:text-4xl">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id).namaLengkap,
+                data?.find((d: any) => d.id == params.id)?.namaLengkap,
                 null,
                 2
               ).replace(/['"]+/g, "")}
             </h1>
             <h2 className="text-2xl">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id).namaPanggilan,
+                data?.find((d: any) => d.id == params.id)?.namaPanggilan,
                 null,
                 2
               ).replace(/['"]+/g, "")}
@@ -62,7 +55,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="mt-2">
             <h4 className="font-bold">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id).tanggal_lahir,
+                data?.find((d: any) => d.id == params.id)?.tanggal_lahir,
                 null,
                 2
               ).replace(/['"]+/g, "")}
@@ -78,7 +71,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="pt-2">
             <p className="text-lg text-gray-600 text-justify lg:text-start">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id).deskripsi,
+                data?.find((d: any) => d.id == params.id)?.deskripsi,
                 null,
                 2
               ).replace(/['"]+/g, "")}
@@ -92,7 +85,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="text-lg">
             <Link
               href={`https://www.instagram.com/${JSON.stringify(
-                data?.find((d: any) => d.id == params.id).instagram,
+                data?.find((d: any) => d.id == params.id)?.instagram,
                 null,
                 2
               ).replace(/['"]+/g, "")}/`}
@@ -101,7 +94,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
               <FaInstagram className="min-w-[18px]" />
               <h2>
                 {JSON.stringify(
-                  data?.find((d: any) => d.id == params.id).instagram,
+                  data?.find((d: any) => d.id == params.id)?.instagram,
                   null,
                   2
                 ).replace(/['"]+/g, "")}
@@ -109,7 +102,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
             </Link>
             <Link
               href={JSON.stringify(
-                data?.find((d: any) => d.id == params.id).linkedin,
+                data?.find((d: any) => d.id == params.id)?.linkedin,
                 null,
                 2
               ).replace(/['"]+/g, "")}
@@ -118,7 +111,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
               <FaLinkedin className="min-w-[18px]" />
               <h2>
                 {JSON.stringify(
-                  data?.find((d: any) => d.id == params.id).linkedin,
+                  data?.find((d: any) => d.id == params.id)?.linkedin,
                   null,
                   2
                 )
@@ -128,7 +121,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
             </Link>
             <Link
               href={`https://www.twitter.com/${JSON.stringify(
-                data?.find((d: any) => d.id == params.id).twitter,
+                data?.find((d: any) => d.id == params.id)?.twitter,
                 null,
                 2
               ).replace(/['"]+/g, "")}/`}
@@ -137,7 +130,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
               <FaTwitter className="min-w-[18px]" />
               <h2>
                 {JSON.stringify(
-                  data?.find((d: any) => d.id == params.id).twitter,
+                  data?.find((d: any) => d.id == params.id)?.twitter,
                   null,
                   2
                 ).replace(/['"]+/g, "")}
@@ -147,7 +140,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
               <FaLine className="min-w-[18px]" />
               <h2>
                 {JSON.stringify(
-                  data?.find((d: any) => d.id == params.id).line,
+                  data?.find((d: any) => d.id == params.id)?.line,
                   null,
                   2
                 ).replace(/['"]+/g, "")}
@@ -162,7 +155,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="pt-2">
             <p className="text-lg text-gray-600 text-justify lg:text-start">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id).message,
+                data?.find((d: any) => d.id == params.id)?.message,
                 null,
                 2
               ).replace(/['"]+/g, "")}
@@ -175,9 +168,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           </div>
           <div>
             <ul className="list-disc pl-5">
-              {data
-                ?.find((d: any) => d.id == params.id)
-                .interests.map((d: any, i: number) => (
+              {data?.find((d: any) => d.id == params.id)?.interests.map((d: any, i: number) => (
                   <li className="text-lg text-gray-600">{d}</li>
                 ))}
             </ul>
