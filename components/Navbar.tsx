@@ -44,7 +44,9 @@ export default function Navbar() {
         <NavLink isActive={pathname === "/gallery"} href="/gallery">
           Gallery
         </NavLink>
-        <NavLink href="#">CStudy</NavLink>
+        <NavLink isActive={pathname === "/cstudy"} href="/cstudy">
+          CStudy
+        </NavLink>
 
         <button className="md:hidden rounded-full mt-20 bg-black text-white p-3 text-xl" onClick={() => setOpen(false)}>
           <HiXMark />
