@@ -17,8 +17,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-evenly text-md font-bold uppercase min-w-[120px]">
           <Link href="/">Home</Link>
-          <Link href="/the-fam">The Fam</Link>
-          <Link href="/the-devs">Meet The Devs</Link>
+          <Link href="/the-fam">The Fam!</Link>
+          <Link href="/the-team">Meet The Team</Link>
           <Link href="/calendar">Calendar</Link>
         </div>
       </div>
