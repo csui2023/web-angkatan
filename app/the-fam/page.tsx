@@ -1,47 +1,96 @@
-'use client';
+"use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import DisplayData from "./DisplayData";
-import names from '../../data/name-major.json';
+import names from "../../data/name-major.json";
 
 export default function TheFam() {
   const [id, setId] = useState("");
   const [major, setMajor] = useState("");
 
   return (
-    <div className="mt-36 px-6 flex flex-col items-center">
-      <h1 className="text-6xl text-center mb-8">Meet Our Family!</h1>
-      <div className="inline-flex justify-center shadow-sm">
-        <input
-          type="text"
-          placeholder="Search by Name"
-          className="px-3 py-2 rounded-l-md bg-opacity-50 bg-white backdrop-blur"
-          defaultValue={id}
-          onChange={(e) => {
-            setId(e.target.value);
-          }}
-        ></input>
-
-        <select
-          name="major"
-          className="px-3 py-2 rounded-r-md border-l-2 bg-opacity-50 bg-white backdrop-blur"
-          defaultValue={major}
-          onChange={(e) => {
-            setMajor(e.target.value);
-          }}
-        >
-          <option value="">All Majors</option>
-          <option value="Ilmu Komputer">Ilmu Komputer</option>
-          <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
-          <option value="Sistem Informasi">Sistem Informasi</option>
-        </select>
-      </div>
-      <div className="mt-16 flex max-w-5xl flex-row flex-wrap justify-center gap-4">
-        <DisplayData
-          data={names.filter((c: any) =>
-            (id ? c.id.includes(id) : true) && (major ? c.jurusan === major : true)
-          )}
+    <div className="mt-36 px-6">
+      <div className="relative w-full min-[400px]:w-screen z-1">
+        <Image
+          src={"/assets/elements/the-fam/1.png"}
+          alt={"1"}
+          width={180}
+          height={180}
+          className="absolute top-0 left-0"
         />
+        <Image
+          src={"/assets/elements/the-fam/2.png"}
+          alt={"1"}
+          width={180}
+          height={180}
+          className="absolute top-[50vh] left-0"
+        />
+        <Image
+          src={"/assets/elements/the-fam/3.png"}
+          alt={"1"}
+          width={180}
+          height={180}
+          className="absolute top-[200vh] left-0"
+        />
+        <Image
+          src={"/assets/elements/the-fam/4.png"}
+          alt={"1"}
+          width={180}
+          height={180}
+          className="absolute top-0 right-0"
+        />
+        <Image
+          src={"/assets/elements/the-fam/5.png"}
+          alt={"1"}
+          width={180}
+          height={180}
+          className="absolute top-[50vh] right-0"
+        />
+        <Image
+          src={"/assets/elements/the-fam/6.png"}
+          alt={"1"}
+          width={180}
+          height={180}
+          className="absolute top-[200vh] right-0"
+        />
+      </div>
+      <div className="z-2 flex flex-col items-center">
+        <h1 className="text-6xl text-center mb-8">Meet Our Family!</h1>
+        <div className="inline-flex justify-center shadow-sm">
+          <input
+            type="text"
+            placeholder="Search by Name"
+            className="px-3 py-2 rounded-l-md bg-opacity-50 bg-white backdrop-blur"
+            defaultValue={id}
+            onChange={(e) => {
+              setId(e.target.value);
+            }}
+          ></input>
+
+          <select
+            name="major"
+            className="px-3 py-2 rounded-r-md border-l-2 bg-opacity-50 bg-white backdrop-blur"
+            defaultValue={major}
+            onChange={(e) => {
+              setMajor(e.target.value);
+            }}
+          >
+            <option value="">All Majors</option>
+            <option value="Ilmu Komputer">Ilmu Komputer</option>
+            <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+          </select>
+        </div>
+        <div className="mt-16 flex max-w-5xl flex-row flex-wrap justify-center gap-4">
+          <DisplayData
+            data={names.filter(
+              (c: any) =>
+                (id ? c.id.includes(id) : true) &&
+                (major ? c.jurusan === major : true)
+            )}
+          />
+        </div>
       </div>
     </div>
   );

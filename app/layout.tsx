@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className='min-h-screen bgMesh relative before:content-[""] before:-z-999 before:absolute before:w-full before:h-full before:bg-[#ffffff86] before:backdrop-blur-md'>
           <div className="scrollbar overflow-auto">
             <Navbar />
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <div className="flex justify-center items-center">
                 {children}
               </div>
