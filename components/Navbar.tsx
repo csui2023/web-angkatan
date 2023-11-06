@@ -15,9 +15,9 @@ function NavLink({ isActive, ...props }: NavLinkProps) {
   return (
     <Link
       {...props}
-      className={`py-1.5 px-4 rounded-full transition text-gray-900 ${
-        isActive ? "bg-white shadow-md" : ""
-      } hover:shadow-lg transition font-semibold text-neutral-800`}
+      className={`py-1.5 px-4 rounded-full transition hover:shadow-lg font-semibold text-neutral-800 ${
+        isActive ? "bg-white/80 shadow-md" : "hover:bg-neutral-50/40"
+      }`}
     />
   );
 }
@@ -32,7 +32,11 @@ export default function Navbar() {
       <Link href="/">
         <Image src="/logo.png" alt="" width={48} height={49} />
       </Link>
-      <div className={`${open ? "bottom-0" : "-bottom-full"} duration-100 left-0 fixed md:static h-screen w-screen md:w-auto z-50 md:h-auto flex flex-col md:flex-row backdrop-blur md:backdrop-blur-0 justify-center items-center gap-4 md:gap-2`}>
+      <div
+        className={`${
+          open ? "bottom-0" : "-bottom-full"
+        } duration-100 left-0 fixed md:static h-screen w-screen md:w-auto z-50 md:h-auto flex flex-col md:flex-row backdrop-blur md:backdrop-blur-0 justify-center items-center gap-4 md:gap-2`}
+      >
         <h1 className="md:hidden text-4xl mb-20">CSUI 2023</h1>
 
         <NavLink isActive={pathname === "/the-fam/"} href="/the-fam">
@@ -48,11 +52,17 @@ export default function Navbar() {
           CStudy
         </NavLink>
 
-        <button className="md:hidden rounded-full mt-20 bg-black text-white p-3 text-xl" onClick={() => setOpen(false)}>
+        <button
+          className="md:hidden rounded-full mt-20 bg-black text-white p-3 text-xl"
+          onClick={() => setOpen(false)}
+        >
           <HiXMark />
         </button>
       </div>
-      <button className="md:hidden hover:bg-opacity-20 hover:bg-gray-600 p-2.5 rounded-full" onClick={() => setOpen(!open)}>
+      <button
+        className="md:hidden hover:bg-opacity-20 hover:bg-gray-600 p-2.5 rounded-full"
+        onClick={() => setOpen(!open)}
+      >
         <HiBars3 />
       </button>
     </nav>

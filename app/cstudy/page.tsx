@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CStudy() {
   return (
-    <div className="py-10 w-full max-w-sm md:max-w-7xl px-3">
+    <div className="pt-32 pb-10 w-full max-w-sm md:max-w-7xl px-3">
       <div className="py-6">
         <h1 className="text-5xl font-bold">CStudy</h1>
       </div>

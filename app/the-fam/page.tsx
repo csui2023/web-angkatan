@@ -10,7 +10,7 @@ export default function TheFam() {
   const [major, setMajor] = useState("");
 
   return (
-    <div className="mt-36 px-6">
+    <div className="mt-40 px-6">
       <div className="relative w-full min-[400px]:w-screen z-1">
         <Image
           src={"/assets/elements/the-fam/1.png"}
