@@ -55,7 +55,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="mt-2">
             <h4 className="font-bold">
               {JSON.stringify(
-                data?.find((d: any) => d.id == params.id)?.tanggal_lahir,
+                data?.find((d: any) => d.id == params.id)?.tanggalLahir,
                 null,
                 2
               ).replace(/['"]+/g, "")}
