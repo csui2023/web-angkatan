@@ -6,9 +6,8 @@ import React from "react";
 import { FaInstagram, FaTwitter, FaYoutube, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
-
   return (
-    <nav className="text-neutral-800 mx-5 my-8 backdrop-blur bg-gradient-to-r from-red-500/10 via-orange-500/10 to-blue-500/10 z-50 border-white border-2 border-opacity-30 rounded-3xl shadow-xl px-10 py-10 lg:px-20 lg:py-20 flex flex-col lg:flex-row space-y-16 lg:space-y-0">
+    <nav className="text-neutral-800 mx-5 my-8 backdrop-blur brightness-105 bg-gradient-to-br from-red-400/10 via-blue-400/10 to-cyan-400/10 z-50 border-white border-2 border-opacity-30 rounded-3xl shadow-xl px-10 py-10 lg:px-20 lg:py-20 flex flex-col lg:flex-row space-y-16 lg:space-y-0">
       <div className="grow flex justify-evenly lg:justify-start space-x-5 lg:space-x-10">
         <div className="">
           <Link href="/">

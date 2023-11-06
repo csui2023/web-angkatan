@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     // TODO: Make Navbar responsive
-    <nav className="fixed left-5 right-5 top-5 backdrop-blur bg-gradient-to-r from-red-500/10 via-orange-500/10 to-blue-500/10 border-white border-2 border-opacity-30 shadow-xl rounded-3xl z-50 px-10 py-3 10 flex flex-row content-center justify-between items-center">
+    <nav className="fixed left-5 right-5 top-5 backdrop-blur brightness-105 bg-gradient-to-br from-red-400/10 via-blue-400/10 to-cyan-400/10 border-white border-2 border-opacity-30 shadow-xl rounded-3xl z-50 px-10 py-3 10 flex flex-row content-center justify-between items-center">
       <Link href="/">
         <Image src="/logo.png" alt="" width={48} height={49} />
       </Link>

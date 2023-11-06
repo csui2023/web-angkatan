@@ -5,13 +5,13 @@ import { FaArrowDown } from "react-icons/fa";
 export default function Home() {
   return (
     <div>
-      <div className="relative top-[-14px]">
+      <div className="relative">
         <Image
           src={`/assets/images/hero-background.png`}
           alt={"hero-background"}
           width={1920}
           height={1080}
-          className="w-screen min-h-[500px] object-cover"
+          className="w-screen min-h-[500px] object-cover bg-black/20 shadow-xl rounded-b-[40px]"
         />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col space-y-4 lg:space-y-12 justify-center items-center p-4 md:p-10">
           <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white text-center">
