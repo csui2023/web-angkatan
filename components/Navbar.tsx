@@ -38,8 +38,8 @@ export default function Navbar() {
         <NavLink isActive={pathname === "/the-fam/"} href="/the-fam">
           The Fam!
         </NavLink>
-        <NavLink isActive={pathname === "/the-devs/"} href="/the-devs">
-          Meet the Devs
+        <NavLink isActive={pathname === "/the-team/"} href="/the-team">
+          Meet the Team
         </NavLink>
         <NavLink isActive={pathname === "/gallery/"} href="/gallery">
           Gallery
