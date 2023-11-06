@@ -1,16 +1,10 @@
-import { promises as fs } from "fs";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-  FaLine,
-} from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedin, FaLine } from "react-icons/fa";
 import data from "../../../data/full.json";
 
 export async function generateStaticParams() {
-  return data.map(d => ({ id: d.id }));
+  return data.map((d) => ({ id: d.id }));
 }
 
 export default async function Profile({ params }: { params: { id: string } }) {
@@ -168,7 +162,9 @@ export default async function Profile({ params }: { params: { id: string } }) {
           </div>
           <div>
             <ul className="list-disc pl-5">
-              {data?.find((d: any) => d.id == params.id)?.interests.map((d: any, i: number) => (
+              {data
+                ?.find((d: any) => d.id == params.id)
+                ?.interests.map((d: any, i: number) => (
                   <li className="text-lg text-gray-600">{d}</li>
                 ))}
             </ul>

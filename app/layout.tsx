@@ -27,9 +27,7 @@ export default function RootLayout({
           <div className="scrollbar overflow-auto">
             <Navbar />
             <div className="relative overflow-hidden">
-              <div className="flex justify-center items-center">
-                {children}
-              </div>
+              <div className="flex justify-center items-center">{children}</div>
             </div>
             <Footer />
           </div>

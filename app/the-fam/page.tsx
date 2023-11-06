@@ -10,8 +10,8 @@ export default function TheFam() {
   const [major, setMajor] = useState("");
 
   return (
-    <div className="mt-40 px-6">
-      <div className="relative w-full min-[400px]:w-screen z-1">
+    <div className="mt-40">
+      <div className="relative w-full min-[400px]:w-screen z-0">
         <Image
           src={"/assets/elements/the-fam/1.png"}
           alt={"1"}
@@ -55,13 +55,13 @@ export default function TheFam() {
           className="absolute top-[200vh] right-0"
         />
       </div>
-      <div className="z-2 flex flex-col items-center">
-        <h1 className="text-6xl text-center mb-8">Meet Our Family!</h1>
-        <div className="inline-flex justify-center shadow-sm">
+      <div className="flex flex-col items-center px-6">
+        <h1 className="z-10 text-6xl text-center mb-8">Meet Our Family!</h1>
+        <div className="inline-flex flex-col md:flex-row justify-center shadow-sm">
           <input
             type="text"
             placeholder="Search by Name"
-            className="px-3 py-2 rounded-l-md bg-opacity-50 bg-white backdrop-blur"
+            className="px-3 py-2 rounded-t-md md:rounded-l-md bg-opacity-50 bg-white backdrop-blur"
             defaultValue={id}
             onChange={(e) => {
               setId(e.target.value);
@@ -70,7 +70,7 @@ export default function TheFam() {
 
           <select
             name="major"
-            className="px-3 py-2 rounded-r-md border-l-2 bg-opacity-50 bg-white backdrop-blur"
+            className="px-3 py-2 rounded-b-md md:rounded-r-md border-t-2 md:border-l-2 bg-opacity-50 bg-white backdrop-blur"
             defaultValue={major}
             onChange={(e) => {
               setMajor(e.target.value);

@@ -14,11 +14,11 @@ export default function Footer() {
             <Image src="/logo.png" alt="" width={150} height={150} />
           </Link>
         </div>
-        <div className="flex flex-col justify-evenly text-md font-bold uppercase min-w-[120px]">
-          <Link href="/">Home</Link>
+        <div className="flex flex-col space-y-1 justify-evenly text-md font-bold uppercase min-w-[120px]">
           <Link href="/the-fam">The Fam!</Link>
           <Link href="/the-team">Meet The Team</Link>
-          <Link href="/calendar">Calendar</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/cstudy">CStudy</Link>
         </div>
       </div>
       <div className="grow flex flex-col lg:flex-row justify-evenly lg:justify-end items-center lg:space-x-10 space-y-4 lg:space-y-0">
