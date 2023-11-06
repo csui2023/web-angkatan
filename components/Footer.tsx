@@ -2,15 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 import { FaInstagram, FaTwitter, FaYoutube, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
-  const pathname = usePathname();
 
   return (
-    <nav className="backdrop-blur bg-gray-400 z-50 bg-opacity-30 px-10 py-10 lg:px-20 lg:py-20 border-gray-400 border-opacity-10 border-solid border-2 flex flex-col lg:flex-row space-y-16 lg:space-y-0">
+    <nav className="text-neutral-800 mx-5 my-8 backdrop-blur bg-gradient-to-r from-red-500/10 via-orange-500/10 to-blue-500/10 z-50 border-white border-2 border-opacity-30 rounded-3xl shadow-xl px-10 py-10 lg:px-20 lg:py-20 flex flex-col lg:flex-row space-y-16 lg:space-y-0">
       <div className="grow flex justify-evenly lg:justify-start space-x-5 lg:space-x-10">
         <div className="">
           <Link href="/">
