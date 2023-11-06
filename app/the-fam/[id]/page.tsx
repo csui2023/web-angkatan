@@ -116,7 +116,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
                   2
                 )
                   .replace(/['"]+/g, "")
-                  .slice(12)}
+                  .slice(24)}
               </h2>
             </Link>
             <Link
