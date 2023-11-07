@@ -2,12 +2,17 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import DisplayData from "./DisplayData";
 import names from "../../data/name-major.json";
+import ProfileCard from "@/components/ProfileCard";
 
 export default function TheFam() {
   const [id, setId] = useState("");
   const [major, setMajor] = useState("");
+
+  const profiles = names.filter(
+    (c: any) =>
+      (id ? c.id.includes(id) : true) && (major ? c.jurusan === major : true)
+  );
 
   return (
     <div className="mt-40">
@@ -66,7 +71,7 @@ export default function TheFam() {
             onChange={(e) => {
               setId(e.target.value);
             }}
-          ></input>
+          />
 
           <select
             name="major"
@@ -83,13 +88,7 @@ export default function TheFam() {
           </select>
         </div>
         <div className="mt-16 flex max-w-5xl flex-row flex-wrap justify-center gap-4">
-          <DisplayData
-            data={names.filter(
-              (c: any) =>
-                (id ? c.id.includes(id) : true) &&
-                (major ? c.jurusan === major : true)
-            )}
-          />
+          {profiles.map(profile => <ProfileCard profile={profile} />)}
         </div>
       </div>
     </div>
