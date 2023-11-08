@@ -63,7 +63,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
             <h1 className="font-bold text-2xl">Description</h1>
           </div>
           <div className="pt-2">
-            <p className="text-lg text-gray-600 text-justify lg:text-start">
+            <p className="text-lg text-gray-600 text-justify">
               {JSON.stringify(
                 data?.find((d: any) => d.id == params.id)?.deskripsi,
                 null,
@@ -147,7 +147,7 @@ export default async function Profile({ params }: { params: { id: string } }) {
             <h1 className="font-bold text-2xl">Message for GAUNG 2023</h1>
           </div>
           <div className="pt-2">
-            <p className="text-lg text-gray-600 text-justify lg:text-start">
+            <p className="text-lg text-gray-600 text-justify">
               {JSON.stringify(
                 data?.find((d: any) => d.id == params.id)?.message,
                 null,
