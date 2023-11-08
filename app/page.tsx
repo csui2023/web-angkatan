@@ -28,7 +28,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto my-20 flex flex-col gap-10">
+      <div className="max-w-6xl mx-auto px-6 my-20 flex flex-col gap-10">
         <Chat name="Kak Irfan" position="left">
           Halo CSUI 2023! Gue mewakili semua panitia PMB ingin mengucapkan
           selamat telah memiliki website angkatan! Gue harap dari website ini
