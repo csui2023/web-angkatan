@@ -55,27 +55,27 @@ export default function Gallery() {
             >
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/csui23-gathering/1.jpg"
+                src="/assets/images/gallery/csui23-gathering/1.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/csui23-gathering/2.jpg"
+                src="/assets/images/gallery/csui23-gathering/2.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/csui23-gathering/3.jpg"
+                src="/assets/images/gallery/csui23-gathering/3.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/csui23-gathering/4.jpg"
+                src="/assets/images/gallery/csui23-gathering/4.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/csui23-gathering/5.jpg"
+                src="/assets/images/gallery/csui23-gathering/5.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/csui23-gathering/6.jpg"
+                src="/assets/images/gallery/csui23-gathering/6.JPG"
               />
             </Carousel>
           </div>
@@ -151,31 +151,31 @@ export default function Gallery() {
             >
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/1.jpg"
+                src="/assets/images/gallery/psaf/1.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/2.jpg"
+                src="/assets/images/gallery/psaf/2.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/3.jpg"
+                src="/assets/images/gallery/psaf/3.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/4.jpg"
+                src="/assets/images/gallery/psaf/4.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/5.jpg"
+                src="/assets/images/gallery/psaf/5.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/6.jpg"
+                src="/assets/images/gallery/psaf/6.JPG"
               />
               <MyCarousel
                 variant="image"
-                src="/assets/images/gallery/psaf/7.jpg"
+                src="/assets/images/gallery/psaf/7.JPG"
               />
             </Carousel>
           </div>
