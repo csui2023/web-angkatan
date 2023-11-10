@@ -27,15 +27,6 @@ export default function Footer() {
           <Link href="https://www.instagram.com/csui.2023/">
             <FaInstagram />
           </Link>
-          <Link href="https://www.twitter.com/csui.2023/">
-            <FaTwitter />
-          </Link>
-          <Link href="https://www.youtube.com/@csui.2023/">
-            <FaYoutube />
-          </Link>
-          <Link href="https://www.tiktok.com/@csui.2023/">
-            <FaTiktok />
-          </Link>
         </div>
       </div>
     </nav>
