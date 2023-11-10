@@ -15,7 +15,7 @@ export default function Gallery() {
           <h1 className="text-3xl text-center font-clash-display py-2 px-5 mb-5">
             CSUI 2023 BACK TO SCHOOL
           </h1>
-          <div className="bg-neutral-200/75 rounded-2xl md:px-4">
+          <div className="bg-neutral-200/75 border-white border-2 border-opacity-30 rounded-2xl md:px-4">
             <Carousel
               withIndicators
               slideGap="xl"
@@ -46,7 +46,7 @@ export default function Gallery() {
             CSUI 2023 GATHERING
           </h1>
 
-          <div className="bg-neutral-200/75 rounded-2xl md:px-4">
+          <div className="bg-neutral-200/75 border-white border-2 border-opacity-30 rounded-2xl md:px-4">
             <Carousel
               withIndicators
               slideGap="xl"
@@ -85,7 +85,7 @@ export default function Gallery() {
             FIRST YELLOW MEET
           </h1>
 
-          <div className="bg-neutral-200/75 rounded-2xl md:px-4">
+          <div className="bg-neutral-200/75 border-white border-2 border-opacity-30 rounded-2xl md:px-4">
             <Carousel
               withIndicators
               slideGap="xl"
@@ -115,7 +115,7 @@ export default function Gallery() {
           <h1 className="text-3xl text-center font-clash-display py-2 px-5 mb-5">
             LAST DAY PADUS WITH PAK DIBYO
           </h1>
-          <div className="bg-neutral-200/75 rounded-2xl md:px-4">
+          <div className="bg-neutral-200/75 border-white border-2 border-opacity-30 rounded-2xl md:px-4">
             <Carousel
               withIndicators
               slideGap="xl"
@@ -142,7 +142,7 @@ export default function Gallery() {
             PSAF
           </h1>
 
-          <div className="bg-neutral-200/75 rounded-2xl md:px-4">
+          <div className="bg-neutral-200/75 border-white border-2 border-opacity-30 rounded-2xl md:px-4">
             <Carousel
               withIndicators
               slideGap="xl"
