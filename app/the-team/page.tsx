@@ -9,31 +9,16 @@ export default function TheTeam() {
         name="Inti"
         people={[
           { id: "andrew-devito-aryo", namaLengkap: "Andrew Devito Aryo" },
-          {
-            id: "anthony-edbert-feriyanto",
-            namaLengkap: "Anthony Edbert Feriyanto",
-          },
+          { id: "anthony-edbert-feriyanto", namaLengkap: "Anthony Edbert Feriyanto" },
           { id: "catherine-aurellia", namaLengkap: "Catherine Aurellia" },
-          {
-            id: "ida-made-revindra-dikta-mahendra",
-            namaLengkap: "Ida Made Revindra Dikta Mahendra",
-          },
+          { id: "ida-made-revindra-dikta-mahendra", namaLengkap: "Ida Made Revindra Dikta Mahendra" },
           { id: "harman-hakim", namaLengkap: "Harman Hakim" },
-          {
-            id: "raden-ahmad-yasin-mahendra",
-            namaLengkap: "Raden Ahmad Yasin Mahendra",
-          },
+          { id: "raden-ahmad-yasin-mahendra", namaLengkap: "Raden Ahmad Yasin Mahendra" },
           { id: "oscar-ryanda", namaLengkap: "Oscar Ryanda" },
           { id: "thorbert-anson-shi", namaLengkap: "Thorbert Anson Shi" },
-          {
-            id: "ezar-akhdan-shada-surahman",
-            namaLengkap: "Ezar Akhdan Shada Surahman",
-          },
+          { id: "ezar-akhdan-shada-surahman", namaLengkap: "Ezar Akhdan Shada Surahman" },
           { id: "irma-nia-alwijah", namaLengkap: "Irma Nia Alwijah" },
-          {
-            id: "rayienda-hasmaradana-najlamahsa",
-            namaLengkap: "Rayienda Hasmaradana Najlamahsa",
-          },
+          { id: "rayienda-hasmaradana-najlamahsa", namaLengkap: "Rayienda Hasmaradana Najlamahsa" },
         ]}
       />
       <Division
@@ -60,6 +45,18 @@ export default function TheTeam() {
           { id: "mawla-raditya-pambudi", namaLengkap: "Mawla Raditya Pambudi"},
           { id: "rayhan-alviandi", namaLengkap: "Rayhan Alviandi"},
           { id: "tarissa-mutia-andini", namaLengkap: "Tarissa Mutia Andini"},
+          { id: "rosanne-valerie", namaLengkap: "Rosanne Valerie" },
+          { id: "muhammad-jordan-ar-razi-aziz", namaLengkap: "Muhammad Jordan Ar-Razi Aziz " },
+          { id: "muhammad-wendy-fyfo-anggara", namaLengkap: "Muhammad Wendy Fyfo Anggara" },
+          { id: "felita-zahra-d", namaLengkap: "Felita Zahra D" },
+          { id: "abby-shelley-tampubolon", namaLengkap: "Abby Shelley Tampubolon" },
+          { id: "athallah-nadhif", namaLengkap: "Athallah Nadhif" },
+          { id: "indah-cahya-puspitahati", namaLengkap: "Indah Cahya Puspitahati" },
+          { id: "sarah-saphira-setiawan", namaLengkap: "Sarah Saphira Setiawan" },
+          { id: "sayyid-thariq-gilang-muttaqien", namaLengkap: "Sayyid Thariq Gilang Muttaqien" },
+          { id: "ignasius-bramantya-widiprasetya", namaLengkap: "Ignasius Bramantya Widiprasetya" },
+          { id: "arya-gilang-prasetya", namaLengkap: "Arya Gilang Prasetya" },
+          { id: "andharu-hanif-achmadsyah", namaLengkap: "Andharu Hanif Achmadsyah" },
         ]}
       />
       <Division
