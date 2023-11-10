@@ -11,7 +11,7 @@ export default function TheFam() {
 
   const profiles = names.filter(
     (c: any) =>
-      (id ? c.id.includes(id) : true) && (major ? c.jurusan === major : true)
+      !(id.toLowerCase().split(" ").map(v => c.id.includes(v))).includes(false) && (major ? c.jurusan === major : true)
   );
 
   return (
@@ -83,9 +83,9 @@ export default function TheFam() {
               }}
             >
               <option value="">All Majors</option>
-              <option value="Ilmu Komputer">Ilmu Komputer</option>
-              <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
-              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option>Computer Science</option>
+              <option>Intl. Computer Science</option>
+              <option>Information Systems</option>
             </select>
           </div>
         </div>
