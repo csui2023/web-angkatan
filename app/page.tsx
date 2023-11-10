@@ -15,9 +15,8 @@ export default function Home() {
           className="w-screen min-h-[500px] object-cover bg-black/20 shadow-xl"
         />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col space-y-4 lg:space-y-12 justify-center items-center p-4 md:p-10">
-          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white text-center">
-            Welcome, to <pre className="inline text-blue-600">CSUI</pre>{" "}
-            <pre className="inline text-red-600">2023</pre>'s Website
+          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white text-center font-clash-display">
+            CSUI 2023
           </h1>
           <Link
             className="bg-neutral-800 text-xs md:text-lg text-white py-2 px-3 md:px-6 rounded-lg md:rounded-xl flex justify-center items-center hover:scale-110 transition"

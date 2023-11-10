@@ -61,34 +61,36 @@ export default function TheFam() {
         />
       </div>
       <div className="flex flex-col items-center px-6">
-        <h1 className="z-10 text-6xl text-center mb-8">Meet Our Family!</h1>
-        <div className="inline-flex flex-col md:flex-row justify-center shadow-sm">
-          <input
-            type="text"
-            placeholder="Search by Name"
-            className="px-3 py-2 rounded-t-md md:rounded-l-md bg-opacity-50 bg-white backdrop-blur"
-            defaultValue={id}
-            onChange={(e) => {
-              setId(e.target.value);
-            }}
-          />
+        <div className="flex flex-col items-center px-24">
+          <h1 className="z-10 text-7xl font-clash-display text-center mb-8">Meet Our Family!</h1>
+          <div className="inline-flex flex-col md:flex-row justify-center shadow-sm">
+            <input
+              type="text"
+              placeholder="Search by Name"
+              className="px-3 py-2 rounded-t-md md:rounded-l-md bg-opacity-50 bg-white backdrop-blur"
+              defaultValue={id}
+              onChange={(e) => {
+                setId(e.target.value);
+              }}
+            />
 
-          <select
-            name="major"
-            className="px-3 py-2 rounded-b-md md:rounded-r-md border-t-2 md:border-l-2 bg-opacity-50 bg-white backdrop-blur"
-            defaultValue={major}
-            onChange={(e) => {
-              setMajor(e.target.value);
-            }}
-          >
-            <option value="">All Majors</option>
-            <option value="Ilmu Komputer">Ilmu Komputer</option>
-            <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
-            <option value="Sistem Informasi">Sistem Informasi</option>
-          </select>
+            <select
+              name="major"
+              className="px-3 py-2 rounded-b-md md:rounded-r-md border-t-2 md:border-l-2 bg-opacity-50 bg-white backdrop-blur"
+              defaultValue={major}
+              onChange={(e) => {
+                setMajor(e.target.value);
+              }}
+            >
+              <option value="">All Majors</option>
+              <option value="Ilmu Komputer">Ilmu Komputer</option>
+              <option value="Ilmu Komputer KKI">Ilmu Komputer KKI</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+            </select>
+          </div>
         </div>
         <div className="mt-16 flex max-w-5xl flex-row flex-wrap justify-center gap-4">
-          {profiles.map(profile => <ProfileCard profile={profile} />)}
+          {profiles.map((profile, i) => <ProfileCard key={i} profile={profile} />)}
         </div>
       </div>
     </div>
