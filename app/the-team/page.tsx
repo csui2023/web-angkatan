@@ -8,13 +8,13 @@ export default function TheTeam() {
         name="Inti"
         people={[
           { id: "andrew-devito-aryo", namaLengkap: "Andrew Devito Aryo" },
-          { id: "anthony-edbert-feriyanto", namaLengkap: "Anthony Edbert Feriyanto" },
+          { id: "thorbert-anson-shi", namaLengkap: "Thorbert Anson Shi" },
           { id: "catherine-aurellia", namaLengkap: "Catherine Aurellia" },
+          { id: "anthony-edbert-feriyanto", namaLengkap: "Anthony Edbert Feriyanto" },
           { id: "ida-made-revindra-dikta-mahendra", namaLengkap: "Ida Made Revindra Dikta Mahendra" },
           { id: "harman-hakim", namaLengkap: "Harman Hakim" },
           { id: "raden-ahmad-yasin-mahendra", namaLengkap: "Raden Ahmad Yasin Mahendra" },
           { id: "oscar-ryanda", namaLengkap: "Oscar Ryanda" },
-          { id: "thorbert-anson-shi", namaLengkap: "Thorbert Anson Shi" },
           { id: "ezar-akhdan-shada-surahman", namaLengkap: "Ezar Akhdan Shada Surahman" },
           { id: "irma-nia-alwijah", namaLengkap: "Irma Nia Alwijah" },
           { id: "rayienda-hasmaradana-najlamahsa", namaLengkap: "Rayienda Hasmaradana Najlamahsa" },
@@ -23,6 +23,7 @@ export default function TheTeam() {
       <Division
         name="Kreatif"
         people={[
+          { id: "flori-andrea-ng", namaLengkap: "Flori Andrea Ng" },
           { id: "arief-ridzki-darmawan", namaLengkap: "Arief Ridzki Darmawan"},
           { id: "widya-mutia-ichsan", namaLengkap: "Widya Mutia Ichsan"},
           { id: "najwa-zarifa", namaLengkap: "Najwa Zarifa"},
@@ -75,11 +76,11 @@ export default function TheTeam() {
       <Division
         name="Webdev"
         people={[
-          { id: "stefanus-tan-jaya", namaLengkap: "Stefanus Tan Jaya" },
-          { id: "valentino-kim-fernando", namaLengkap: "Valentino Kim Fernando" },
           { id: "muhammad-vito-secona", namaLengkap: "Muhammad Vito Secona" },
           { id: "muhammad-fazil-tirtana", namaLengkap: "Muhammad Fazil Tirtana" },
+          { id: "valentino-kim-fernando", namaLengkap: "Valentino Kim Fernando" },
           { id: "franky-raymarcell-sinaga", namaLengkap: "Franky Raymarcell Sinaga" },
+          { id: "stefanus-tan-jaya", namaLengkap: "Stefanus Tan Jaya" },
         ]}
       />
     </div>
