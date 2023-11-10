@@ -61,7 +61,7 @@ export default function TheFam() {
         />
       </div>
       <div className="flex flex-col items-center px-6">
-        <div className="flex flex-col items-center px-24">
+        <div className="flex flex-col items-center">
           <h1 className="z-10 text-7xl font-clash-display text-center mb-8">Meet Our Family!</h1>
           <div className="inline-flex flex-col md:flex-row justify-center shadow-sm">
             <input
