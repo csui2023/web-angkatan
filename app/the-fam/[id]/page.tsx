@@ -55,28 +55,28 @@ export default async function Profile({ params }: { params: { id: string } }) {
           <div className="text-lg">
             <Link
               href={`https://www.instagram.com/${current.instagram}`}
-              className="flex items-center space-x-2"
+              className={`${current.instagram ? "" : "pointer-events-none"} flex items-center space-x-2`}
             >
               <FaInstagram className="min-w-[18px]" />
-              <h2>{current.instagram}</h2>
+              <h2>{current.instagram || "-"}</h2>
             </Link>
             <Link
               href={current.linkedin}
-              className="flex items-center space-x-2"
+              className={`${current.linkedin ? "" : "pointer-events-none"} flex items-center space-x-2`}
             >
               <FaLinkedin className="min-w-[18px]" />
-              <h2>{current.linkedin.slice(24)}</h2>
+              <h2>{current.linkedin.slice(24) || "-"}</h2>
             </Link>
             <Link
               href={`https://www.twitter.com/${current.twitter}/`}
-              className="flex items-center space-x-2"
+              className={`${current.twitter ? "" : "pointer-events-none"} flex items-center space-x-2`}
             >
               <FaTwitter className="min-w-[18px]" />
-              <h2>{current.twitter}</h2>
+              <h2>{current.twitter || "-"}</h2>
             </Link>
             <div className="flex items-center space-x-2">
               <FaLine className="min-w-[18px]" />
-              <h2>{current.line}</h2>
+              <h2>{current.line || "-"}</h2>
             </div>
           </div>
         </div>
