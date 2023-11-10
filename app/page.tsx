@@ -20,7 +20,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6 my-20 flex flex-col gap-10">
+      <div className="max-w-6xl mx-auto px-6 my-20 flex flex-col gap-10" id=".">
         <Chat
           name="Irfan Satya Hendrasto, Ketua Pelaksana PMB Fasilkom UI 2023"
           position="left"
