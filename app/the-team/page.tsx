@@ -1,4 +1,3 @@
-import ProfileCard from "@/components/ProfileCard";
 import Division from "./Division";
 
 export default function TheTeam() {
@@ -80,6 +79,7 @@ export default function TheTeam() {
           { id: "valentino-kim-fernando", namaLengkap: "Valentino Kim Fernando" },
           { id: "muhammad-vito-secona", namaLengkap: "Muhammad Vito Secona" },
           { id: "muhammad-fazil-tirtana", namaLengkap: "Muhammad Fazil Tirtana" },
+          { id: "franky-raymarcell-sinaga", namaLengkap: "Franky Raymarcell Sinaga" },
         ]}
       />
     </div>
