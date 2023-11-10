@@ -28,7 +28,11 @@ export default function Home() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto px-6 my-20 flex flex-col gap-10">
-        <Chat name="Kak Irfan" position="left">
+        <Chat
+          name="Irfan Satya Hendrasto, Ketua Pelaksana PMB Fasilkom UI 2023"
+          position="left"
+          pfp="irfan-satya-hendrasto"
+        >
           Halo CSUI 2023! Gue mewakili semua panitia PMB ingin mengucapkan
           selamat telah memiliki website angkatan! Gue harap dari website ini
           kalian bisa mengenal teman-teman kalian yang mungkin belum sempat
@@ -40,11 +44,25 @@ export default function Home() {
           untuk sesama dan kalian dapat meneruskan budaya baik ini ke
           angkatan-angkatan CSUI yang akan datang. Semangatt CSUI 2023!
         </Chat>
-        <Chat name="Enderu" position="right">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
-          neque laboriosam consectetur itaque? Blanditiis perferendis accusamus
-          ullam dicta odio autem ab quas ut, quis excepturi maxime aut aliquid
-          vel hic.
+        <Chat
+          name="Andrew Devito Aryo, Ketua Koordinator PMB Fasilkom UI 2023"
+          position="right"
+          pfp="andrew-devito-aryo"
+        >
+          Halo Teman-teman CS UI 2023! Selamat telah menjadi bagian dari
+          Fasilkom UI 2023 dan Cerita 23 yang begitu panjang dan menyenangkan
+          tentunya. Gua juga ingin mengucapkan Terima Kasih kepada kalian yang
+          telah berpartisipasi dan aktif dalam kegiatan PMB Fasilkom 2023. Tanpa
+          kalian, pekerjaan Gua sebagai Koordinator Angkatan tentunya tidak akan
+          mudah. Pesan dari Gua untuk kalian singkat aja, jangan lupa untuk
+          selalu menjaga solidaritas antar angkatan, menjaga budaya Fasilkom,
+          dan hormat satu sama lain. Akhir kata, Gua mau ucapin Terima Kasih
+          kepada kalian karena telah memberikan Gua pengalaman yang tak
+          terlupakan selama Gua menjadi Koordinator Angkatan. Pengalaman ini
+          akan selalu Gua ingat untuk seumur hidup Gua. Berakhirnya masa
+          Koordinator Gua bukan berarti akhir dari CS UI 2023, melainkan awal
+          baru bagi kita. Semoga kedepannya CS UI 2023 makin solid! Semangat
+          buat kita semua!
         </Chat>
       </div>
     </div>
