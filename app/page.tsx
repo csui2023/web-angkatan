@@ -7,14 +7,7 @@ export default function Home() {
   return (
     <div>
       <div className="relative">
-        <Image
-          src={`/assets/images/hero-background.png`}
-          alt={"hero-background"}
-          width={1920}
-          height={1080}
-          className="w-screen min-h-[500px] object-cover bg-black/20 shadow-xl"
-        />
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col space-y-4 lg:space-y-12 justify-center items-center p-4 md:p-10">
+        <div className="bg-hero bg-center bg-cover w-screen h-screen flex flex-col space-y-4 lg:space-y-12 justify-center items-center">
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white text-center font-clash-display">
             CSUI 2023
           </h1>
