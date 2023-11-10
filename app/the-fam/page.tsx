@@ -67,7 +67,7 @@ export default function TheFam() {
             <input
               type="text"
               placeholder="Search by Name"
-              className="px-3 py-2 rounded-t-md md:rounded-l-md bg-opacity-50 bg-white backdrop-blur"
+              className="px-3 py-2 rounded-t-md rounded-bl-none md:rounded-tr-none md:rounded-l-md bg-opacity-50 bg-white backdrop-blur"
               defaultValue={id}
               onChange={(e) => {
                 setId(e.target.value);
@@ -76,7 +76,7 @@ export default function TheFam() {
 
             <select
               name="major"
-              className="px-3 py-2 rounded-b-md md:rounded-r-md border-t-2 md:border-l-2 bg-opacity-50 bg-white backdrop-blur"
+              className="px-3 py-2 rounded-b-md rounded-tr-none md:rounded-bl-none md:rounded-r-md md:border-l-2 bg-opacity-50 bg-white backdrop-blur"
               defaultValue={major}
               onChange={(e) => {
                 setMajor(e.target.value);
